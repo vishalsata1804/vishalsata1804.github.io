@@ -171,3 +171,168 @@ html.dark-mode .final-consulting-cta{background:#05080c}
   .engagement-card.featured{transform:none}
   .lead{font-size:16px}
 }
+
+
+/* Final layout polish: keep premium sections aligned with the site grid */
+.agency-partnership,
+.bring-me,
+.engagements,
+.partner-process {
+  width: min(1280px, calc(100% - 48px));
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.agency-partnership {
+  padding-left: clamp(24px, 4vw, 56px);
+  padding-right: clamp(24px, 4vw, 56px);
+}
+
+.bring-me,
+.engagements,
+.partner-process {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.final-consulting-cta {
+  width: min(1280px, calc(100% - 48px));
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .agency-partnership,
+  .bring-me,
+  .engagements,
+  .partner-process,
+  .final-consulting-cta {
+    width: calc(100% - 32px);
+  }
+
+  .agency-partnership {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+
+/* Expert final layout system */
+.agency-partnership,
+.bring-me,
+.engagements,
+.partner-process,
+.final-consulting-cta {
+  width: 100%;
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.agency-partnership {
+  padding: 80px 28px;
+}
+
+.bring-me,
+.engagements,
+.partner-process {
+  padding: 92px 0;
+}
+
+.final-consulting-cta {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding: 52px 42px;
+}
+
+/* Keep all internal grids aligned to the same site width. */
+.agency-grid,
+.problem-grid,
+.engagement-grid,
+.partner-steps {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.problem-grid,
+.engagement-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.partner-steps {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Prevent long copy from creating accidental horizontal overflow. */
+.agency-partnership *,
+.bring-me *,
+.engagements *,
+.partner-process *,
+.final-consulting-cta * {
+  min-width: 0;
+}
+
+/* Floating contact control stays clear of the browser edge. */
+.whatsapp-float {
+  right: 24px;
+  bottom: 28px;
+}
+
+@media (max-width: 900px) {
+  .agency-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-grid,
+  .engagement-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partner-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .final-consulting-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .agency-partnership,
+  .bring-me,
+  .engagements,
+  .partner-process,
+  .final-consulting-cta {
+    width: calc(100% - 32px);
+  }
+
+  .agency-partnership {
+    padding: 32px 22px;
+  }
+
+  .bring-me,
+  .engagements,
+  .partner-process {
+    padding: 65px 0;
+  }
+
+  .problem-grid,
+  .engagement-grid,
+  .partner-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .final-consulting-cta {
+    padding: 32px 22px;
+    margin-bottom: 65px;
+  }
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 20px;
+  }
+}
