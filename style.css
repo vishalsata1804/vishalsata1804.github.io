@@ -118,3 +118,56 @@ html.dark-mode img { opacity:.96; }
   .theme-toggle-label { display:none; }
   .theme-toggle { width:38px; height:38px; padding:0; justify-content:center; }
 }
+
+
+/* Premium B2B consulting sections */
+.agency-strip{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;padding:8px 12px;border:1px solid rgba(120,130,145,.25);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.02em}
+.agency-dot{width:7px;height:7px;border-radius:50%;background:#2fbf71;box-shadow:0 0 0 4px rgba(47,191,113,.12)}
+.agency-partnership,.bring-me,.engagements,.partner-process{padding:92px 0}
+.agency-partnership{margin-top:20px;padding:80px 34px;border-radius:28px;background:linear-gradient(135deg,#f4f7fb,#fff);border:1px solid rgba(20,30,45,.08)}
+.agency-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.agency-partnership h2,.bring-me h2,.engagements h2,.partner-process h2{font-size:clamp(32px,4vw,54px);line-height:1.05;margin:10px 0 18px;letter-spacing:-.04em}
+.agency-partnership h2 span,.bring-me h2 span,.engagements h2 span,.partner-process h2 span,.final-consulting-cta h2 span{font-weight:400}
+.lead{font-size:18px;line-height:1.7;max-width:700px}
+.narrow{max-width:650px}
+.agency-cta-row,.final-cta-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.agency-flow{display:flex;flex-direction:column;align-items:center}
+.flow-item{width:100%;padding:22px 24px;border:1px solid rgba(20,30,45,.1);border-radius:18px;background:#fff;box-shadow:0 12px 35px rgba(15,25,40,.06)}
+.flow-item strong{display:block;font-size:18px;margin-bottom:6px}
+.flow-item span{font-size:13px;line-height:1.5;opacity:.72}
+.flow-item.highlight{border-color:rgba(30,100,210,.25);box-shadow:0 16px 45px rgba(30,80,180,.1)}
+.flow-arrow{font-size:22px;padding:9px 0;opacity:.45}
+.problem-grid,.engagement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+.problem-card,.engagement-card{padding:28px;border:1px solid rgba(20,30,45,.09);border-radius:20px;background:var(--surface,#fff)}
+.problem-card span,.engagement-label{font-size:11px;font-weight:800;letter-spacing:.14em;opacity:.5}
+.problem-card h3,.engagement-card h3{margin:14px 0 8px;font-size:20px}
+.problem-card p,.engagement-card p{line-height:1.65;font-size:14px;opacity:.75}
+.engagement-card{min-height:245px;display:flex;flex-direction:column}
+.engagement-card strong{margin-top:auto;font-size:12px;opacity:.7}
+.engagement-card.featured{transform:translateY(-8px);box-shadow:0 20px 50px rgba(20,40,70,.1);border-color:rgba(30,100,210,.22)}
+.partner-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+.partner-steps>div{padding:26px;border-top:2px solid currentColor}
+.partner-steps b{font-size:12px;opacity:.5}
+.partner-steps h3{margin:12px 0 8px}
+.partner-steps p{font-size:14px;line-height:1.6;opacity:.7}
+.final-consulting-cta{margin:30px 0 80px;padding:52px 42px;border-radius:26px;background:#111820;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.final-consulting-cta h2{font-size:clamp(30px,4vw,48px);line-height:1.08;margin:8px 0 12px}
+.final-consulting-cta p{max-width:620px;opacity:.72;line-height:1.6}
+.final-consulting-cta .section-kicker{opacity:.65}
+.final-consulting-cta .btn-secondary{color:#fff;border-color:rgba(255,255,255,.25)}
+html.dark-mode .agency-partnership{background:#121a23;border-color:#2a3745}
+html.dark-mode .flow-item,.dark-mode .problem-card,.dark-mode .engagement-card{background:#151d26;border-color:#2a3745}
+html.dark-mode .final-consulting-cta{background:#05080c}
+@media(max-width:900px){
+  .agency-grid{grid-template-columns:1fr;gap:40px}
+  .problem-grid,.engagement-grid{grid-template-columns:repeat(2,1fr)}
+  .partner-steps{grid-template-columns:repeat(2,1fr)}
+  .final-consulting-cta{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:600px){
+  .agency-partnership,.final-consulting-cta{padding:32px 22px;border-radius:20px}
+  .agency-partnership,.bring-me,.engagements,.partner-process{padding-top:65px;padding-bottom:65px}
+  .problem-grid,.engagement-grid,.partner-steps{grid-template-columns:1fr}
+  .engagement-card.featured{transform:none}
+  .lead{font-size:16px}
+}
