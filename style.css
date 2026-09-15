@@ -92,6 +92,8 @@ html.dark-mode .proof b { color:#fff; }
 html.dark-mode .card,
 html.dark-mode .service-card,
 html.dark-mode .case-card,
+html.dark-mode .case,
+html.dark-mode .who article,
 html.dark-mode .faq-item,
 html.dark-mode .metric,
 html.dark-mode .process-step {
@@ -99,6 +101,20 @@ html.dark-mode .process-step {
   color:#e6edf3;
   border-color:#2a3745;
   box-shadow:0 8px 28px rgba(0,0,0,.22);
+}
+html.dark-mode .section-tint {
+  background:#10161d;
+}
+html.dark-mode .chips span {
+  background:#151d26;
+  border-color:#2a3745;
+  color:#e6edf3;
+}
+html.dark-mode .contact {
+  background:#0d1117;
+}
+html.dark-mode .step {
+  border-top-color:#2a3745;
 }
 html.dark-mode input,
 html.dark-mode textarea,
