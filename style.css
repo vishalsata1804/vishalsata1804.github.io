@@ -86,6 +86,9 @@ html.dark-mode .theme-toggle {
   border-color:#344454;
 }
 html.dark-mode a { color:#8ab4f8; }
+html.dark-mode a.ghost,
+html.dark-mode button.ghost { color:var(--ink); }
+html.dark-mode .proof b { color:#fff; }
 html.dark-mode .card,
 html.dark-mode .service-card,
 html.dark-mode .case-card,
@@ -121,6 +124,7 @@ html.dark-mode img { opacity:.96; }
 
 
 /* Premium B2B consulting sections */
+.agency-strip-wrap{max-width:var(--max);margin:auto;padding:0 28px}
 .agency-strip{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;padding:8px 12px;border:1px solid rgba(120,130,145,.25);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.02em}
 .agency-dot{width:7px;height:7px;border-radius:50%;background:#2fbf71;box-shadow:0 0 0 4px rgba(47,191,113,.12)}
 .agency-partnership,.bring-me,.engagements,.partner-process{padding:92px 0}
